@@ -2,101 +2,67 @@
 <html>
 
 <head>
-  <title>Welcome to my Website!</title>
   <meta charset="utf-8">
-  <style>
-    .boxmodel{
-      clear:both;
-      background-color: white; 
-      box-shadow: 2px 2px 5px 5px gray;
-
-      font-family: cursive;
-			width :600px;
-      position: static;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 1.5cm;
-      margin-bottom: 2cm;
-    }
-    h1{
-      background-color: white;
-    }
-    p{
-      background-color: white;
-    }
-    .box-inset{
-      border-style:dotted;
-      padding-left: 0;
-      padding-right: 0;
-    }
-    .icenter {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 40%;
-      border: solid 4px grey;
-    }
-    .Header {
-      background-color: -1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue;
-    }
-    body {
-      font-size: larger;
-      text-align: center;
-      background-image: url("/images/KUrock.jpeg");
-      background-size:contain;
-      background-attachment: fixed;
-    }
-    ul {
-      width: 90px;
-  margin-left: auto;
-  margin-right: auto;}
-    
-  </style>
+  <title>Welcome to my Website!</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
-<body >
+<body>
 
-  <div class="boxmodel">
-  <h1><a href="index.html" class="Header">Project : webpage</a></h1>
-</div>
-<div class="boxmodel">
-  <div>
-    <br>
-    <h2>This is Some Funcions of HTML & CSS</h2>
-    <h2>First Function, Image insertion</h2>
-    <div class="icenter"; style="background-color: white;">
-      <img src="images/emblem.svg" alt="KU roar">
+  <div class="boxmodel_h">
+    <h1><a href="index.html">Project : webpage</a></h1>
+  </div>
+  <div class="boxmodel_m">
+    <div>
+      <br>
+      <h2>This is Some Funcions of HTML & CSS</h2>
+      <h2>First Function, Image insertion</h2>
+      <div class="icenter">
+        <img src="images/emblem.svg" alt="KU roar">
+      </div>
     </div>
+    <br>
+    <div>
+      <h2>Second Function, Move to other pages</h2>
+      <a href="./html/1.html">page1</a><br>
+      <a href="./html/2.html">page2</a><br>
+      <a href="./html/3.html">page3</a>
+      <h2 style="font-size: 200%; "><a name="bookmark"></a><mark>Here is BookMark</mark></h2>
+    </div><br>
   </div>
-  <br>
-  <div>
-  <h2>Second Function, Move to other pages</h2>
-    <a href="./html/1.html">page1</a><br>
-    <a href="./html/2.html">page2</a><br>
-    <a href="./html/3.html">page3</a>
-  <h2 style="font-size: 200%; "><a name="bookmark"></a><mark>Here is BookMark</mark></h2>
-  </div><br>
-  </div>
-  <div class="boxmodel">
-  <h2>Third Function, make BookMark</h2>
-  <a href="#bookmark">move to BookMark</a>
+  <div class="boxmodel_m">
+    <h2>Third Function, make BookMark</h2>
+    <a href="#bookmark">move to BookMark</a>
 
-  <h2>Forth Function, Add List</h2>
-  <ul >
-    <li>list 1</li>
-    <li>list 2</li>
-    <li>list 3</li>
-    <li>list 4</li>
-  </ul>
-  <h2>Fifth Function, Add Border</h2>
-<div class="box-inset">This is Border!!</div>
-<br>
-<br>
-  
-</div>
-Here is the end of Page
+    <h2>Fourth Function, Add List</h2>
+    <ul>
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+      <li>list 4</li>
+    </ul>
+  </div>
+  <div class="boxmodel_m">
+    <h2>Fifth Function, Add Border</h2>
+    <div class="box-inset">This is Border!!</div>
+
+
+    <h2>Sixth Function, inline Frame</h2>
+    -> https:://rinothehero.github.io
+    <iframe src="./index.html" name="frame_target"></iframe>
+    <h2><a href="/html/1.html" target="frame_target">change this frame to '1.html'</a></h2>
+  </div>
+
+  <div class="boxmodel_m">
+    <h2>Seventh Function, Input</h2>
+    <form action="./aab.txt">
+      <input type="text" name="seach">
+    </form>
+    <br>
+  </div>
+
+
+  Here is the end of Page
 </body>
 
 </html>
