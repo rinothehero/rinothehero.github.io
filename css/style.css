@@ -1,10 +1,13 @@
     .boxmodel_h
     {
       clear: both;
+
       background-color: #f1ede8;
-      box-shadow: 0px 5px 4px 8px rgba(75, 67, 67, 0.849);
-      font-family: cursive;
-      width: 60%;
+      box-shadow: 0px 5px 4px 8px rgba(0, 0, 0, 0.756);
+
+      font-size: larger;
+;
+      width: 700px;
       height: auto;
       left: 0;
       right: 0;
@@ -12,19 +15,23 @@
       margin-right: auto;
       margin-top: 1.5cm;
       margin-bottom: 2cm;
+
+      top: 20%; 
+      
     }
     .boxmodel_m {
       clear: both;
       background-color: #f1ede8;
       box-shadow: 0px 5px 4px 8px rgba(0, 0, 0, 0.756);
       font-family: cursive;
-      width: 70%;
+      width: 700px;
       left: 0;
       right: 0;
       margin-left: auto;
       margin-right: auto;
       margin-top: 1.5cm;
       margin-bottom: 2cm;
+      
     }
 
   
@@ -61,6 +68,8 @@
       background-image: url("/images/KUrock.jpeg");
       background-size: contain;
       background-attachment: fixed;
+      padding:0px;
+      margin: 0px;
     }
 
     ul {
@@ -73,3 +82,15 @@
         width: 80%;
         height: 300px;
     }
+    
+    .jb_box {
+      width: 100%; 
+      padding: 0px; margin: 0px; position: relative;
+
+    }
+
+    video { width: 100%;margin: 0px; display: flex;justify-content: center;}
+
+
+
+    
