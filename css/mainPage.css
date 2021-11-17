@@ -1,0 +1,129 @@
+html, body{
+  height: 100%;
+}
+.boxmodel_h
+{
+  height: 100%;
+  background: transparent;
+  font-family: fantasy;
+}
+.boxmodel_m {
+  clear: both;
+  background-color: white;
+  border-top:paleturquoise;
+  border-top-width: 4px;
+  border-style:groove;
+  font-family: cursive;
+  position: static;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5cm;
+  margin-bottom: 2cm;
+  height: 200%;
+  
+}
+.scroll {
+  position: absolute; bottom: 20px; left: 50%; 
+  transform: translatex(-50%);
+  z-index: 2;
+  display: inline-block;
+  color: #fff;
+  transition: opacity .3s;
+}
+.scroll:hover {opacity:.5;}
+#section1 a {padding-top: 60px;}
+#section1 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-width: 1px;
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+a { text-decoration:none !important } 
+a:hover { text-decoration:none !important }
+
+.fix_m {
+
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  border-radius: 100px;
+}
+
+body {
+  font-size: larger;
+  text-align: center;
+  background-color:cornsilk;
+  background-size:cover;
+  background-attachment:fixed;
+  padding:0px;
+  margin: 0px;
+  background-image: url("/images/blue_shape.png");
+
+}
+
+
+
+
+p {
+  background-color: white;
+}
+
+.box-inset {
+  border-style: dotted;
+  padding-left: 0;
+  padding-right: 0;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border: solid 4px grey;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.756);
+  background-color: rgb(230, 192, 185);
+}
+
+.Header {
+  background-color: -1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue;
+}
+
+
+
+ul {
+  width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+iframe {
+    width: 80%;
+    height: 300px;
+}
+
+.jb_box {
+  width: 100%; 
+  padding: 0px; margin: 0px; position: relative;
+
+}
+
+video { width: 100%;margin: 0px; display: flex;justify-content: center;}
+
+
+
