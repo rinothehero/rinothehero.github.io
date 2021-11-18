@@ -1,11 +1,24 @@
 html, body{
   height: 100%;
 }
+body {
+  font-size: larger;
+  text-align: center;
+  background-color:cornsilk;
+  background-size:cover;
+  background-attachment:fixed;
+  padding:0px;
+  margin: 0px;
+  background-image: url("/images/IMG_0008.jpeg");
+
+}
 .boxmodel_h
 {
   height: 100%;
   background: transparent;
   font-family: fantasy;
+  text-align: center;
+  
 }
 .boxmodel_m {
   clear: both;
@@ -62,17 +75,7 @@ a:hover { text-decoration:none !important }
   border-radius: 100px;
 }
 
-body {
-  font-size: larger;
-  text-align: center;
-  background-color:cornsilk;
-  background-size:cover;
-  background-attachment:fixed;
-  padding:0px;
-  margin: 0px;
-  background-image: url("/images/blue_shape.png");
 
-}
 
 
 
