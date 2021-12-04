@@ -1,55 +1,214 @@
 html, body{
   height: 100%;
 }
-body {
-  font-size: larger;
-  text-align: center;
-  background-color:cornsilk;
-  background-size:cover;
-  background-attachment:fixed;
-  padding:0px;
-  margin: 0px;
-  background-image: url("/images/IMG_0008.jpeg");
+
+.fix_m {
+
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  border-radius: 100px;
 
 }
-.boxmodel_h
+
+header.header_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 25;
+  width: 100%;
+  height: 120px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+
+}
+
+
+header.header_wrap .gnb_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  width: 100%;
+  height: 34px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.2);
+  animation-name: gnbAni;
+  animation-duration: 2s;
+}
+header.header_wrap .gnb_wrap .inner {
+  max-width: 1440px;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 96%;
+}
+header.header_wrap .gnb_wrap .inner:after {
+  display: block;
+  content: '';
+  height: 0;
+  font-size: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  clear: both;
+}
+header.header_wrap .gnb_wrap .inner a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #fff;
+  font-weight: normal;
+  margin-left: 12px;
+  padding-left: 12px;
+  line-height: 34px;
+}
+header.header_wrap .gnb_wrap .inner a:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+header.header_wrap .gnb_wrap .inner a:first-child:before {
+  display: none;
+}
+header.header_wrap .gnb_wrap .inner a:hover {
+  color: #ba2e12;
+}
+header.header_wrap .gnb_wrap .inner a:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 1px;
+  height: 10px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.2);
+}
+header.header_wrap .gnb_wrap .inner .lang_wrap {
+  float: left;
+  vertical-align: top;
+}
+header.header_wrap .gnb_wrap .inner .family_site_wrap {
+  float: right;
+  vertical-align: top;
+}
+header.header_wrap .gnb_wrap .inner .family_site_wrap a {
+  color: #fff;
+  font-family: 'NotoSansDemiLight' !important;
+}
+header.header_wrap .gnb_wrap .inner .family_site_wrap a:first-child {
+  font-family: 'NotoSansMedium' !important;
+}
+header.header_wrap .gnb_wrap .inner .family_site_wrap a:hover {
+  color: #ba2e12;
+}
+ 
+header.header_wrap.active {
+  z-index: 22;
+}
+header.header_wrap.active .main_logo {
+  display: block;
+}
+header.header_wrap.active .search_top_area {
+  display: block;
+}
+
+
+
+
+
+body {
+  background-image: url("/images/_DJJ0626.jpg");
+  background-size:cover;
+  background-attachment:fixed;
+  background-position: center;
+  color: white;
+  
+  margin: 0px;
+  
+
+}
+body h1{
+  font-style: oblique;
+
+}
+.section_main
 {
+
+  text-align: center;
+
   height: 100%;
   background: transparent;
   font-family: fantasy;
   text-align: center;
-  
+
+  position:relative;
+  display: block;
 }
-.boxmodel_m {
-  clear: both;
-  background-color: white;
-  border-top:paleturquoise;
-  border-top-width: 4px;
-  border-style:groove;
-  font-family: cursive;
-  position: static;
+.section_content{
+  color:black;
+  background-color:rgb(228, 228, 228);
+
+  border-radius: 17px;
+
+
+  box-shadow: 0px 0px 2px 3px rgba(169, 168, 168, 0.934);
+
+  width: 1000px;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1.5cm;
-  margin-bottom: 2cm;
-  height: 200%;
-  
+  margin: auto;
+  text-align: center;
+  display: block;
+  clear: both;
+  position: relative;
+
+  font-family: cursive;
+  height: 100%;
+
 }
+
+.footer{
+  text-align: center;
+  display: block;
+  margin: 0px;
+  clear: both;
+  position: relative;
+
+  font-family: cursive;
+
+}
+
+
+/* 여러개의 scroll이 존재할 경우, 전부 설정하기 위해 이렇게 씀 */
 .scroll {
-  position: absolute; bottom: 20px; left: 50%; 
+  position:absolute;
+  bottom: 40px;
+  left: 50%;
+  /* 박스의 중심 축을 얼만큼으로 옮기는지 ? */
   transform: translatex(-50%);
   z-index: 2;
   display: inline-block;
   color: #fff;
-  transition: opacity .3s;
+  /* 포인터를 옮겼을 때 투명해 지는데 걸리는 시간 */
+  transition: opacity 1s;
 }
-.scroll:hover {opacity:.5;}
-#section1 a {padding-top: 60px;}
-#section1 a span {
+/* 포인터를 옮겼을 때 투명도가 얼만큼으로 변하는지 */
+.scroll:hover {opacity:.3;}
+/* scroll box model setting */
+.scroll {
+  padding-top: 60px;
+  font-family: cursive;
+}
+
+
+
+/* Section 1의 arrows 설정 */
+#section1 .arrow_1, #section1 .arrow_2{
   position: absolute;
-  top: 0;
   left: 50%;
   width: 24px;
   height: 24px;
@@ -60,73 +219,43 @@ body {
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
+#section1 .arrow_1{
+  top: 0px;
+}
+#section1 .arrow_2{
+  top: 15px;
+}
+
+/* Section 2의 arrows 설정 */
+#section2 .arrow_1, #section2 .arrow_2, #section2 .arrow_3{
+  position: absolute;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-width: 1px;
+  border-radius: 100px;
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#section2 .arrow_1{
+  top: 0px;
+  opacity: .4;
+}
+#section2 .arrow_2{
+  top: 10px;
+  opacity: .7;
+}
+#section2 .arrow_3{
+  top: 20px;
+
+}
+
+
+
+
 
 a { text-decoration:none !important } 
 a:hover { text-decoration:none !important }
-
-.fix_m {
-
-  width: 150px;
-  height: 150px;
-  background-color: white;
-  position: fixed;
-  bottom: 30px;
-  left: 30px;
-  border-radius: 100px;
-}
-
-
-
-
-
-
-p {
-  background-color: white;
-}
-
-.box-inset {
-  border-style: dotted;
-  padding-left: 0;
-  padding-right: 0;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.icenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  border: solid 4px grey;
-  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.756);
-  background-color: rgb(230, 192, 185);
-}
-
-.Header {
-  background-color: -1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue;
-}
-
-
-
-ul {
-  width: 90px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-iframe {
-    width: 80%;
-    height: 300px;
-}
-
-.jb_box {
-  width: 100%; 
-  padding: 0px; margin: 0px; position: relative;
-
-}
-
-video { width: 100%;margin: 0px; display: flex;justify-content: center;}
-
-
-
