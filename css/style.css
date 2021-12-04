@@ -65,7 +65,7 @@
     body {
       font-size: larger;
       text-align: center;
-      background-image: url("/images/KUrock.jpeg");
+      background-image: url("../images/cool-background.png");
       background-size: contain;
       background-attachment: fixed;
       padding:0px;
