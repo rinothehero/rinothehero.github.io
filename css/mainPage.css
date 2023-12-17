@@ -121,10 +121,11 @@ header.header_wrap.active .search_top_area {
 
 
 body {
-  background-image: url("../images/blue_shape.png");
+  background-image: url("/images/tiger.png");
   background-size:cover;
   background-attachment:fixed;
   background-position: center;
+  background-color: black;
   color: white;
   
   margin: 0px;
