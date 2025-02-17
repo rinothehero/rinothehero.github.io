@@ -7,7 +7,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <audio src="bgm.mp3" autoplay loop></audio>
+    <audio id="bgm" src="bgm.mp3" loop></audio>
+    <button
+      id="play-btn"
+      class="play-btn"
+      onclick="document.getElementById('bgm').play()"
+    >
+      Play
+    </button>
+    <button
+      id="pause-btn"
+      class="play-btn"
+      onclick="document.getElementById('bgm').pause()"
+    >
+      Pause
+    </button>
+
     <!-- 상단 영역 -->
     <div class="top-container">
       <!-- 왼쪽 이미지 영역 -->
