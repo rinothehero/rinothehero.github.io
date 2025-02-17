@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>준혁❤️재빈</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 상단 영역 -->
+    <div class="top-container">
+      <!-- 왼쪽 이미지 영역 -->
+      <div class="image-container">
+        <img
+          id="current-image"
+          src="images/IMG_1219.jpeg"
+          alt="Slideshow Image"
+        />
+      </div>
+      <!-- 오른쪽 텍스트 영역 -->
+      <div class="content-container">
+        <h1 class="line" style="opacity: 0">준혁이가 사랑하는 재빈이에게</h1>
+        <div class="line" style="opacity: 0">여기에 온걸 환영해 😍</div>
+        <div class="line" style="opacity: 0">
+          이 곳은 우리의 소중한 추억들로 이루어져 있어
+        </div>
+        <div class="line" style="opacity: 0">
+          준혁이와 재빈이의 기록을 담는 공간이 되길 바래
+        </div>
+        <div class="line" style="opacity: 0">
+          (아직 모든 기능이 완성된건 아니야 😝)
+        </div>
+        <div class="line" style="opacity: 0">아래 버튼을 눌러서 이동 !</div>
+
+        <button id="scroll-btn" class="scroll-btn">⬇</button>
+      </div>
+    </div>
+
+    <div class="split-container">
+      <div class="left-section">
+        <h2 id="left-title" class="newline" style="opacity: 0">
+          카드를 하나씩 눌러봐
+        </h2>
+        <p id="left-content" class="newline" style="opacity: 0">
+          우리의 추억이 담긴 카드들이야 😍
+        </p>
+        <p id="left-extra" class="newline" style="opacity: 0">
+          (다 보고 나면 아래로 스크롤)
+        </p>
+      </div>
+      <!-- 카드 영역 -->
+      <div class="right-section">
+        <div class="card-wrapper">
+          <div class="card-container">
+            <!-- 카드들이 동적으로 생성됩니다. -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-container" id="finish">
+      <div class="youtube-container">
+        <iframe
+          width="900"
+          height="500"
+          src="https://www.youtube.com/embed/영상ID"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+        <h2>너무 너무 사랑해 재빈아 호주 조심히 다녀와 😍</h2>
+      </div>
+    </div>
+
+    <!-- 모달 팝업 (추가된 코드) -->
+    <div id="image-modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="close-modal" class="close-btn">&times;</span>
+        <img id="modal-image" src="" alt="Full Image" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
