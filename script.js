@@ -3,11 +3,11 @@ const imageContainer = document.querySelector(".image-container img");
 
 // 이미지 경로 배열 (특정 폴더의 이미지들)
 const frontImagePaths = [
-  "front/1.jpeg",
-  "front/2.jpeg",
-  "front/3.jpeg",
-  "front/4.jpeg",
-  "front/5.jpeg",
+  "Front/1.jpeg",
+  "Front/2.jpeg",
+  "Front/3.jpeg",
+  "Front/4.jpeg",
+  "Front/5.jpeg",
 ];
 
 // 현재 이미지 인덱스
