@@ -57,7 +57,7 @@ function showNewLines() {
       line.classList.add("transition");
       setTimeout(() => {
         line.style.opacity = "1"; // 줄을 보이게 설정
-      }, index * 1500); // 각 줄마다 지연 시간 (1.5초 간격)
+      }, index * 1000); // 각 줄마다 지연 시간 (1.5초 간격)
     }
   });
 }
