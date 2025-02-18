@@ -8,6 +8,13 @@ const frontImagePaths = [
   "Front/3.jpeg",
   "Front/4.jpeg",
   "Front/5.jpeg",
+  "Front/5.jpg",
+  "Front/6.jpg",
+  "Front/7.jpg",
+  "Front/8.jpeg",
+  "Front/9.jpeg",
+  "Front/10.jpg",
+  "Front/11.jpg",
 ];
 
 // 현재 이미지 인덱스
